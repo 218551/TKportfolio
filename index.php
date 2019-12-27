@@ -4,6 +4,7 @@ include 'functions.php';
 
 pageSettings();
 generateBar();
-generateContentStart();
+generateContent();
+//generateContentStart();
 generateContentAbout();
 generateFooter();

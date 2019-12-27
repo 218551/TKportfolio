@@ -1,4 +1,4 @@
-$(document).ready(animationStartShow);
+//$(document).ready(animationStartShow);
 
 $(document).ready(function () {
 
@@ -17,8 +17,6 @@ $(document).ready(function () {
     });
 
 });
-
-
 
 function animationStartShow(){
     $('#contentStart').show();

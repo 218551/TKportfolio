@@ -20,7 +20,7 @@ function generateBar(){
             <script src="effects.js"></script>
             <div id="menubar">
                 <ul id="menulist">
-                    <li id="startTab">START</li>
+                    <li id="startTab"><a> START </a></li>
                     <li id="aboutTab">O MNIE</li>
                     <li id="carrerTab">KARIERA</li>
                     <li id="skilsTab">UMIEJĘTNOŚCI</li>
@@ -28,6 +28,20 @@ function generateBar(){
                     <li id="contactTab">KONTAKT</li>
                 </ul>
             </div>
+    ';
+}
+
+function generateContent(){
+    echo '
+            <div class="contentLeft">DIV LEFT</div>
+            <div class="contentRight">DIV RIGHT</div>
+    ';
+}
+
+function generateFooter(){
+    echo '
+            <div id="footer">Tomasz Kubat Portfolio 2020 &reg</div>
+        </body>
     ';
 }
 
@@ -47,16 +61,23 @@ function generateContentStart(){
 function generateContentAbout(){
     echo '
         <div id="contentAbout">
-            <div id="aboutText">
-                SIEMA SIEMA SIEMA SIEMA SIEMA SIEMA SIEMA
+            <div id="leftAbout">
+                <div class="contentLeft">
+                    <div id="aboutLeft1">
+                        ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
+                    </div>
+                    <div id="aboutLeft2">
+                        ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
+                    </div>
+                    <div id="aboutLeft3">
+                        ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
+                    </div>
+                </div>
+                <div class="contentRight">
+                    ABOUT2 ABOUT2 ABOUT2 ABOUT2 ABOUT2 ABOUT2 ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
+                </div>
             </div>
         </div>
     ';
 }
 
-function generateFooter(){
-    echo '
-            <div id="footer">Tomasz Kubat Portfolio 2020 &reg</div>
-        </body>
-    ';
-}
