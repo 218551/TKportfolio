@@ -1,4 +1,4 @@
-//$(document).ready(animationStartShow);
+$(document).ready(animationStartShow);
 
 $(document).ready(function () {
 

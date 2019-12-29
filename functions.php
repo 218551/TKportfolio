@@ -31,13 +31,6 @@ function generateBar(){
     ';
 }
 
-function generateContent(){
-    echo '
-            <div class="contentLeft">DIV LEFT</div>
-            <div class="contentRight">DIV RIGHT</div>
-    ';
-}
-
 function generateFooter(){
     echo '
             <div id="footer">Tomasz Kubat Portfolio 2020 &reg</div>
@@ -74,7 +67,18 @@ function generateContentAbout(){
                     </div>
                 </div>
                 <div class="contentRight">
-                    ABOUT2 ABOUT2 ABOUT2 ABOUT2 ABOUT2 ABOUT2 ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
+                    <div id="aboutRight1">
+                        ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
+                    </div>   
+                    <div id="aboutRight2">
+                        ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
+                    </div> 
+                    <div id="aboutRight3">
+                        ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
+                    </div> 
+                    <div id="aboutRight4">
+                        ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
+                    </div>             
                 </div>
             </div>
         </div>
