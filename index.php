@@ -5,5 +5,5 @@ include 'functions.php';
 pageSettings();
 generateBar();
 generateContentStart();
-//generateContentAbout();
+generateContentAbout();
 generateFooter();

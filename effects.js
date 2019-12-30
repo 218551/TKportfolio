@@ -20,8 +20,8 @@ $(document).ready(function () {
 
 function animationStartShow(){
     $('#contentStart').show();
-    $('#moustache1').show(500).animate({"top":"-=35px"},500).animate({"left":"-=210px"},500);
-    $('#moustache2').show(500).animate({"top":"+=35px"},500).animate({"left":"+=210px"},500);
+    $('#moustache1').show(500).animate({"top":"-=5%"},500).animate({"left":"-=15%"},500);
+    $('#moustache2').show(500).animate({"top":"+=5%"},500).animate({"left":"+=15%"},500);
 
     setTimeout(function () {
         $('#myphoto').fadeTo(500,1);
@@ -42,8 +42,8 @@ function animationStartHide(){
         $('#contentStart').hide(200);
     },800);
 
-    $('#moustache1').animate({"top":"+=35px"},400).animate({"left":"+=210px"},400);
-    $('#moustache2').animate({"top":"-=35px"},400).animate({"left":"-=210px"},400);
+    $('#moustache1').animate({"top":"+=5%"},400).animate({"left":"+=15%"},400);
+    $('#moustache2').animate({"top":"-=5%"},400).animate({"left":"-=15%"},400);
     $('#welcome1').fadeTo(400, 0);
     $('#welcome2').fadeTo(400, 0);
     $('#welcome3').fadeTo(400, 0);
