@@ -35,6 +35,10 @@ function animationStartShow(){
         $('#welcome2').fadeTo(500, 1);
         $('#welcome3').fadeTo(500, 1);
     }, 2500);
+
+    setTimeout(function () {
+        $('#quote').fadeTo(500,1);
+    }, 3000);
 }
 
 function animationStartHide(){
@@ -48,6 +52,7 @@ function animationStartHide(){
     $('#welcome2').fadeTo(400, 0);
     $('#welcome3').fadeTo(400, 0);
     $('#myphoto').fadeTo(1000,0);
+    $('#quote').fadeTo(1000,0);
     setTimeout(function () {
         $('#moustache1').hide(200);
         $('#moustache2').hide(200);

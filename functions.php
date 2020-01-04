@@ -47,6 +47,10 @@ function generateContentStart(){
             <div id="welcome3">TOMASZ KUBAT</div>
             <div id="moustache2"><b>}</b></div>
             <div id="myphoto"><img src ="img/myphoto.png"></div>
+            <div id="quote">
+                <div id="quotetxt"><p><span style="display:inline-block; width: 3vw;"></span><q id="qtxt    ">Zawsze pisz kod tak, jakby gość, który ma się nim zajmować był agresywnym psychopatą, który wie, gdzie mieszkasz</q></p></div>
+                <cite id="sign">Martin Golding</cite>
+            </div>
         </div>
     ';
 }

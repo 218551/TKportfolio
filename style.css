@@ -12,6 +12,9 @@ body, html { margin:0; padding:0; background-color:darkorchid; height:100%; }
 #welcome1 { font-size:3.5vw; font-family:sans-serif; position:fixed; display:none; top:42%; left:13%; }
 #welcome2 { font-size:3.5vw;font-family:sans-serif; position:fixed; display:none; top:42%; left:27%; }
 #welcome3 { font-size:3.5vw; font-family:sans-serif; position:fixed; display:none; top:52%; left:17%; }
+#quote { font-size:1vw; font-family:sans-serif; position:fixed; display:none; width:30vw; bottom:7%; left:5%; }
+#quotetxt { font-size:1.2vw; font-family:sans-serif; font-style: italic; text-align:justify; position:relative; }
+#sign { font-size:1.2vw; font-family:sans-serif; position:relative; float:right; transform:translate(50%); }
 #myphoto { top:0px; right:0px; width:50%; height:100%; overflow:hidden; z-index:900; position:fixed; display:none; }
 #myphoto img { height:100%; opacity:60%; float: right;}
 
