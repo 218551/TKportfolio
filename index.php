@@ -6,4 +6,5 @@ pageSettings();
 generateBar();
 generateContentStart();
 generateContentAbout();
+generateContentCareer();
 generateFooter();

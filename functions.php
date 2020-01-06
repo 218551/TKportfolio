@@ -22,7 +22,7 @@ function generateBar(){
                 <ul id="menulist">
                     <li id="startTab"><a> START </a></li>
                     <li id="aboutTab">O MNIE</li>
-                    <li id="carrerTab">KARIERA</li>
+                    <li id="careerTab">KARIERA</li>
                     <li id="skilsTab">UMIEJĘTNOŚCI</li>
                     <li id="projectsTab">PROJEKTY</li>
                     <li id="contactTab">KONTAKT</li>
@@ -58,28 +58,24 @@ function generateContentStart(){
 function generateContentAbout(){
     echo '
         <div id="contentAbout">
-            <div id="aboutLeft1">
-                ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
-            </div>
-            <div id="aboutLeft2">
-                ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
-            </div>
-            <div id="aboutLeft3">
-                ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
-            </div>
-            <div id="aboutRight1">
-                ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
-            </div>   
-            <div id="aboutRight2">
-                ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
-            </div> 
-            <div id="aboutRight3">
-                ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
-            </div> 
-            <div id="aboutRight4">
-                ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
-            </div>             
+            <div id="aboutLeft1"></div>
+            <div id="aboutLeft2"></div>
+            <div id="aboutLeft3"></div>
+            <div id="aboutRight1"></div>   
+            <div id="aboutRight2"></div> 
+            <div id="aboutRight3"></div> 
+            <div id="aboutRight4"></div>             
         </div>
     ';
 }
 
+function generateContentCareer(){
+    echo '
+        <div id="contentCareer">
+            <div id="careerRight1"></div>
+            <div id="careerRight2"></div>
+            <div id="careerRight3"></div>
+            <div id="careerPic"><img src="img/myphoto.png"/></div>         
+        </div>
+    ';
+}

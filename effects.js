@@ -7,11 +7,24 @@ $(document).ready(function () {
             setTimeout(animationStartShow,1000);
         if($('#contentAbout').is(':visible'))
             animationAboutHide();
+        if($('#contentCareer').is(':visible'))
+            animationCareerHide();
     });
 
     $('#aboutTab').click(function () {
         if(!($('#contentAbout').is(':visible')))
             setTimeout(animationAboutShow,1000);
+        if($('#contentStart').is(':visible'))
+            animationStartHide();
+        if($('#contentCareer').is(':visible'))
+            animationCareerHide();
+    });
+
+    $('#careerTab').click(function () {
+        if(!($('#contentCareer').is(':visible')))
+            setTimeout(animationCareerShow,1000);
+        if(($('#contentAbout').is(':visible')))
+            animationAboutHide();
         if($('#contentStart').is(':visible'))
             animationStartHide();
     });
@@ -62,7 +75,28 @@ function animationStartHide(){
 
 function animationAboutShow(){
     $('#contentAbout').show();
-    $('#contentAbout').fadeTo(500,1);
+    $('#contentAbout').fadeTo(0,1);
+    setTimeout(function () {
+        $('#aboutLeft1').fadeTo(250,1);
+    },250);
+    setTimeout(function () {
+        $('#aboutLeft2').fadeTo(250,1);
+    },500);
+    setTimeout(function () {
+        $('#aboutLeft3').fadeTo(250,1);
+    },750);
+    setTimeout(function () {
+        $('#aboutRight1').fadeTo(250,1);
+    },1000);
+    setTimeout(function () {
+        $('#aboutRight2').fadeTo(250,1);
+    },1250);
+    setTimeout(function () {
+        $('#aboutRight3').fadeTo(250,1);
+    },1500);
+    setTimeout(function () {
+        $('#aboutRight4').fadeTo(250,1);
+    },1750);
 }
 
 function animationAboutHide(){
@@ -70,4 +104,39 @@ function animationAboutHide(){
         $('#contentAbout').hide();
     },500);
     $('#contentAbout').fadeTo(500,0);
+    $('#aboutLeft1').fadeTo(500,0);
+    $('#aboutLeft2').fadeTo(500,0);
+    $('#aboutLeft3').fadeTo(500,0);
+    $('#aboutRight1').fadeTo(500,0);
+    $('#aboutRight2').fadeTo(500,0);
+    $('#aboutRight3').fadeTo(500,0);
+    $('#aboutRight4').fadeTo(500,0);
+}
+
+function animationCareerShow() {
+    $('#contentCareer').show();
+    $('#contentCareer').fadeTo(0, 1);
+    setTimeout(function () {
+        $('#careerRight1').fadeTo(250, 1);
+    }, 250);
+    setTimeout(function () {
+        $('#careerRight2').fadeTo(250, 1);
+    }, 500);
+    setTimeout(function () {
+        $('#careerRight3').fadeTo(250, 1);
+    }, 750);
+    setTimeout(function () {
+        $('#careerPic').fadeTo(250, 1);
+    }, 1000);
+}
+
+function animationCareerHide() {
+    setTimeout(function () {
+        $('#contentCareer').hide();
+    }, 500);
+    $('#contentCareer').fadeTo(500, 0);
+    $('#careerRight1').fadeTo(500, 0);
+    $('#careerRight2').fadeTo(500, 0);
+    $('#careerRight3').fadeTo(500, 0);
+    $('#careerPic').fadeTo(500, 0);
 }
