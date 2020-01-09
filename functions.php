@@ -79,3 +79,16 @@ function generateContentCareer(){
         </div>
     ';
 }
+
+function generateContentSkils(){
+    echo '
+        <div id="contentSkils">
+            <div id="skilsLeft1"></div>
+            <div id="skilsLeft2"></div>
+            <div id="skilsLeft3"></div>
+           <div id="skilsRight1"></div>       
+           <div id="skilsRight2"></div>       
+           <div id="skilsRight3"></div>       
+        </div>
+    ';
+}

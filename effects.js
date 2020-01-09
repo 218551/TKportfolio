@@ -9,6 +9,8 @@ $(document).ready(function () {
             animationAboutHide();
         if($('#contentCareer').is(':visible'))
             animationCareerHide();
+        if($('#contentSkils').is(':visible'))
+            animationSkilsHide();
     });
 
     $('#aboutTab').click(function () {
@@ -18,6 +20,8 @@ $(document).ready(function () {
             animationStartHide();
         if($('#contentCareer').is(':visible'))
             animationCareerHide();
+        if($('#contentSkils').is(':visible'))
+            animationSkilsHide();
     });
 
     $('#careerTab').click(function () {
@@ -27,6 +31,19 @@ $(document).ready(function () {
             animationAboutHide();
         if($('#contentStart').is(':visible'))
             animationStartHide();
+        if($('#contentSkils').is(':visible'))
+            animationSkilsHide();
+    });
+
+    $('#skilsTab').click(function () {
+        if(!($('#contentSkils').is(':visible')))
+            setTimeout(animationSkilsShow,1000);
+        if(($('#contentAbout').is(':visible')))
+            animationAboutHide();
+        if($('#contentStart').is(':visible'))
+            animationStartHide();
+        if($('#contentCareer').is(':visible'))
+            animationCareerHide();
     });
 
 });
@@ -139,4 +156,40 @@ function animationCareerHide() {
     $('#careerRight2').fadeTo(500, 0);
     $('#careerRight3').fadeTo(500, 0);
     $('#careerPic').fadeTo(500, 0);
+}
+
+function animationSkilsShow() {
+    $('#contentSkils').show();
+    $('#contentSkils').fadeTo(0, 1);
+    setTimeout(function () {
+        $('#skilsLeft1').fadeTo(250, 1);
+    }, 250);
+    setTimeout(function () {
+        $('#skilsLeft2').fadeTo(250, 1);
+    }, 500);
+    setTimeout(function () {
+        $('#skilsLeft3').fadeTo(250, 1);
+    }, 750);
+    setTimeout(function () {
+        $('#skilsRight1').fadeTo(250, 1);
+    }, 1500);
+    setTimeout(function () {
+        $('#skilsRight2').fadeTo(250, 1);
+    }, 1250);
+    setTimeout(function () {
+        $('#skilsRight3').fadeTo(250, 1);
+    }, 1000);
+}
+
+function animationSkilsHide() {
+    setTimeout(function () {
+        $('#contentSkils').hide();
+    }, 500);
+    $('#contentSkils').fadeTo(500, 0);
+    $('#skilsLeft1').fadeTo(500, 0);
+    $('#skilsLeft2').fadeTo(500, 0);
+    $('#skilsLeft3').fadeTo(500, 0);
+    $('#skilsRight1').fadeTo(500, 0);
+    $('#skilsRight2').fadeTo(500, 0);
+    $('#skilsRight3').fadeTo(500, 0);
 }

@@ -7,4 +7,5 @@ generateBar();
 generateContentStart();
 generateContentAbout();
 generateContentCareer();
+generateContentSkils();
 generateFooter();
