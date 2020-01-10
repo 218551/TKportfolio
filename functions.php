@@ -92,3 +92,29 @@ function generateContentSkils(){
         </div>
     ';
 }
+
+function generateContentProjects(){
+    echo '
+        <div id="contentProjects">
+            <div id="projectsTitleBar"><div id="projectsTitle">TEST TYTULU</div></div>
+            <div id="projectsDescription"></div>
+            <div id="projectsSlider">   
+                <div  id="slider">
+                    <a href="#" class="control_next">></a>
+                    <a href="#" class="control_prev"><</a>
+                    <div id="bannerlist">
+                        <article class="element">
+                            <a href="#"> <img src=\'img/MyGuardianSlide.jpg\'/img> </a>
+                        </article>
+                        <article class="element">
+                            <a href="#"> <img src=\'img/MocnePlSlide.jpg\'/img> </a>
+                        </article>
+                        <article class="element">
+                            <a href="#"> <img src=\'img/IQnotepadSlide.jpg\'/img> </a>
+                        </article>
+                    </div>
+                </div>
+		    </div>    
+        </div>
+    ';
+}
