@@ -1,6 +1,22 @@
-$(document).ready(animationStartShow);
+var bannerNo;
+var bannerVis;
 
 $(document).ready(function () {
+
+   bannerNo = ($('.element').length);
+   bannerVis = 1;
+
+    hideProjects();
+
+    animationStartShow();
+
+    $('#rightArrow').click(function () {
+        nextProject();
+    });
+
+    $('#leftArrow').click(function () {
+        prevProject();
+    });
 
     $('#startTab').click(function () {
         if(!($('#contentStart').is(':visible')))
@@ -11,6 +27,8 @@ $(document).ready(function () {
             animationCareerHide();
         if($('#contentSkils').is(':visible'))
             animationSkilsHide();
+        if($('#contentProjects').is(':visible'))
+            animationProjectsHide();
     });
 
     $('#aboutTab').click(function () {
@@ -22,6 +40,8 @@ $(document).ready(function () {
             animationCareerHide();
         if($('#contentSkils').is(':visible'))
             animationSkilsHide();
+        if($('#contentProjects').is(':visible'))
+            animationProjectsHide();
     });
 
     $('#careerTab').click(function () {
@@ -33,6 +53,8 @@ $(document).ready(function () {
             animationStartHide();
         if($('#contentSkils').is(':visible'))
             animationSkilsHide();
+        if($('#contentProjects').is(':visible'))
+            animationProjectsHide();
     });
 
     $('#skilsTab').click(function () {
@@ -44,8 +66,22 @@ $(document).ready(function () {
             animationStartHide();
         if($('#contentCareer').is(':visible'))
             animationCareerHide();
+        if($('#contentProjects').is(':visible'))
+            animationProjectsHide();
     });
 
+    $('#projectsTab').click(function () {
+        if(!($('#contentProjects').is(':visible')))
+            setTimeout(animationProjectsShow,1000);
+        if(($('#contentAbout').is(':visible')))
+            animationAboutHide();
+        if($('#contentStart').is(':visible'))
+            animationStartHide();
+        if($('#contentCareer').is(':visible'))
+            animationCareerHide();
+        if($('#contentSkils').is(':visible'))
+            animationSkilsHide();
+    });
 });
 
 function animationStartShow(){
@@ -192,4 +228,62 @@ function animationSkilsHide() {
     $('#skilsRight1').fadeTo(500, 0);
     $('#skilsRight2').fadeTo(500, 0);
     $('#skilsRight3').fadeTo(500, 0);
+}
+
+function animationProjectsShow() {
+    $('#contentProjects').show();
+    $('#contentProjects').fadeTo(0, 1);
+    setTimeout(function () {
+        $('#projectsTitleBar').fadeTo(250, 1);
+    }, 250);
+    setTimeout(function () {
+        $('#projectsDescription').fadeTo(250, 1);
+    }, 500);
+    setTimeout(function () {
+        $('#projectsSlider').fadeTo(250, 1);
+    }, 750);
+}
+
+function animationProjectsHide() {
+    setTimeout(function () {
+        $('#contentProjects').hide();
+    }, 500);
+    $('#contentProjects').fadeTo(500, 0);
+    $('#projectsTitleBar').fadeTo(500, 0);
+    $('#projectsDescription').fadeTo(500, 0);
+    $('#projectsSlider').fadeTo(500, 0);
+}
+
+function hideProjects(){
+    var i;
+    for(i=2;i<=bannerNo;i++){
+        var currBanner = "#banner".concat(i);
+        $(currBanner).fadeTo(0,0);
+    }
+}
+
+function nextProject() {
+    var currBanner = "#banner".concat(bannerVis);
+    $(currBanner).fadeTo(500, 0);
+    if(bannerVis<bannerNo) {
+        var nextBanner = "#banner".concat(bannerVis + 1);
+        bannerVis++;
+    }else{
+        var nextBanner = "#banner".concat("1");
+        bannerVis = 1;
+    }
+    $(nextBanner).fadeTo(500, 1);
+}
+
+function prevProject() {
+    var currBanner = "#banner".concat(bannerVis);
+    $(currBanner).fadeTo(500, 0);
+    if(bannerVis>1) {
+        var nextBanner = "#banner".concat(bannerVis - 1);
+        bannerVis--;
+    }else{
+        var nextBanner = "#banner".concat(bannerNo);
+        bannerVis = bannerNo;
+    }
+    $(nextBanner).fadeTo(500, 1);
 }

@@ -7,9 +7,7 @@ function pageSettings() {
              <meta charset="utf-8" />
              <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
              <title>Tomasz Kubat Portfolio</title>
-             <link rel="shortcut icon" type="image/x-icon" href="images/fsico.png" />
              <link rel="stylesheet" href="style.css" type="text/css" />
-             <link href="css/fontello.css" rel="stylesheet" type="text/css" />
              <script src="jquery-3.4.1.min.js"></script>
           </head>';
 }
@@ -100,21 +98,16 @@ function generateContentProjects(){
             <div id="projectsDescription"></div>
             <div id="projectsSlider">   
                 <div  id="slider">
-                    <a href="#" class="control_next">></a>
-                    <a href="#" class="control_prev"><</a>
+                    <a id="rightArrow" class="control_next">></a>
+                    <a id="leftArrow" class="control_prev"><</a>
                     <div id="bannerlist">
-                        <article class="element">
-                            <a href="#"> <img src=\'img/MyGuardianSlide.jpg\'/img> </a>
-                        </article>
-                        <article class="element">
-                            <a href="#"> <img src=\'img/MocnePlSlide.jpg\'/img> </a>
-                        </article>
-                        <article class="element">
-                            <a href="#"> <img src=\'img/IQnotepadSlide.jpg\'/img> </a>
-                        </article>
+                        <article id="banner1" class="element"><img src="img/MyGuardianSlide.jpg" /></article>
+                        <article id="banner2" class="element"><img src="img/MocnePlSlide.jpg" /></article>
+                        <article id="banner3" class="element"><img src="img/IQnotepadSlide.jpg" /></article>
                     </div>
                 </div>
 		    </div>    
         </div>
     ';
 }
+
