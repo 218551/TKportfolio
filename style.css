@@ -44,7 +44,7 @@ body, html { margin:0; padding:0; background-color:darkorchid; height:100%; }
 
 #contentProjects { display:none; }
 #projectsTitleBar { position:fixed; display:none; top:11%; left:1%; width:98%; height: 10%; text-align:center; font-size:5vh; background-color: green; }
-#projectsTitle { padding:2vh;  }
+#projectsTitle { padding:2vh; }
 #projectsDescription { position:fixed; display:none; top:22%; left:1%; width:30%; height:75%; font-size:2vmin; background-color: red; }
 #projectsSlider { position:fixed; display:none; top:22%; left:32%; width:67%; height:75%; background-color:chartreuse; }
 #slider { position:fixed; top:27%; left:37%; overflow:hidden; border-radius:4px; width:57%; height:65%; box-shadow: 0 0 2vmin 2vmin #000000; }
@@ -53,5 +53,6 @@ body, html { margin:0; padding:0; background-color:darkorchid; height:100%; }
 .element img { width:100%; height:100%; object-fit:cover; }
 #leftArrow, #rightArrow { position:absolute; top:38%; z-index:1000; padding:5vmin 3vmin; background:#2a2a2a; color:#fff; text-decoration:none; font-size:5vmin; opacity:0.3; cursor:pointer; }
 #rightArrow { right:0; }
+.layerElement {position:absolute;}
 
 

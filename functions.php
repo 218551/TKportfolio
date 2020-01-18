@@ -94,8 +94,18 @@ function generateContentSkils(){
 function generateContentProjects(){
     echo '
         <div id="contentProjects">
-            <div id="projectsTitleBar"><div id="projectsTitle">TEST TYTULU</div></div>
-            <div id="projectsDescription"></div>
+            <div id="projectsTitleBar">
+                <div id="projectsTitle">
+                    <div id="title1" class="layerElement">111111</div>
+                    <div id="title2" class="layerElement">22222</div>
+                    <div id="title3" class="layerElement">33333</div> 
+                </div>
+            </div>
+            <div id="projectsDescription">
+                <div id="desc1" class="layerElement"> DESC1 DESC1 DESC1</div>
+                <div id="desc2" class="layerElement"> DESC2 DESC2 DESC2</div>
+                <div id="desc3" class="layerElement"> DESC3 DESC3 DESC3</div>
+            </div>
             <div id="projectsSlider">   
                 <div  id="slider">
                     <a id="rightArrow" class="control_next">></a>

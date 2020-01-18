@@ -259,31 +259,55 @@ function hideProjects(){
     for(i=2;i<=bannerNo;i++){
         var currBanner = "#banner".concat(i);
         $(currBanner).fadeTo(0,0);
+        var currDesc = "#desc".concat(i);
+        $(currDesc).fadeTo(0,0);
+        var currTitle = "#title".concat(i);
+        $(currTitle).fadeTo(0,0);
     }
 }
 
 function nextProject() {
     var currBanner = "#banner".concat(bannerVis);
+    var currDesc = "#desc".concat(bannerVis);
+    var currTitle = "#title".concat(bannerVis);
     $(currBanner).fadeTo(500, 0);
+    $(currDesc).fadeTo(500, 0);
+    $(currTitle).fadeTo(500, 0);
     if(bannerVis<bannerNo) {
         var nextBanner = "#banner".concat(bannerVis + 1);
+        var nextDesc = "#desc".concat(bannerVis + 1);
+        var nextTitle = "#title".concat(bannerVis + 1);
         bannerVis++;
     }else{
         var nextBanner = "#banner".concat("1");
+        var nextDesc = "#desc".concat("1");
+        var nextTitle = "#title".concat("1");
         bannerVis = 1;
     }
     $(nextBanner).fadeTo(500, 1);
+    $(nextDesc).fadeTo(500, 1);
+    $(nextTitle).fadeTo(500, 1);
 }
 
 function prevProject() {
     var currBanner = "#banner".concat(bannerVis);
+    var currDesc = "#desc".concat(bannerVis);
+    var currTitle = "#title".concat(bannerVis);
     $(currBanner).fadeTo(500, 0);
+    $(currDesc).fadeTo(500, 0);
+    $(currTitle).fadeTo(500, 0);
     if(bannerVis>1) {
         var nextBanner = "#banner".concat(bannerVis - 1);
+        var nextDesc = "#desc".concat(bannerVis - 1);
+        var nextTitle = "#title".concat(bannerVis - 1);
         bannerVis--;
     }else{
         var nextBanner = "#banner".concat(bannerNo);
+        var nextDesc = "#desc".concat(bannerNo);
+        var nextTitle = "#title".concat(bannerNo);
         bannerVis = bannerNo;
     }
     $(nextBanner).fadeTo(500, 1);
+    $(nextDesc).fadeTo(500, 1);
+    $(nextTitle).fadeTo(500, 1);
 }
