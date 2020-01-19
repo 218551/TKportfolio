@@ -121,3 +121,16 @@ function generateContentProjects(){
     ';
 }
 
+function generateContentContact(){
+    echo '
+        <div id="contentContact">
+            <div id="contactName"></div>
+            <div id="contactAdress"></div>
+            <div id="contactPhone"></div>
+            <div id="contactMail"></div>
+            <div id="contactFacebook"></div>
+            <div id="contactGithub"></div>
+            <div id="contactCv"></div>
+        </div>
+    ';
+}

@@ -9,4 +9,5 @@ generateContentAbout();
 generateContentCareer();
 generateContentSkils();
 generateContentProjects();
+generateContentContact();
 generateFooter();

@@ -55,4 +55,11 @@ body, html { margin:0; padding:0; background-color:darkorchid; height:100%; }
 #rightArrow { right:0; }
 .layerElement {position:absolute;}
 
-
+#contentContact { display:none; }
+#contactName  { position:fixed; display:none; top:11%; left:25%; width:50%; height:10%; font-size:2vmin; background-color: orange;  }
+#contactAdress  { position:fixed; display:none; top:23%; left:25%; width:50%; height:10%; font-size:2vmin; background-color: orange;  }
+#contactPhone  { position:fixed; display:none; top:35%; left:25%; width:50%; height:10%; font-size:2vmin; background-color: orange;  }
+#contactMail  { position:fixed; display:none; top:47%; left:25%; width:50%; height:10%; font-size:2vmin; background-color: orange;  }
+#contactFacebook  { position:fixed; display:none; top:59%; left:25%; width:50%; height:10%; font-size:2vmin; background-color: orange;  }
+#contactGithub  { position:fixed; display:none; top:71%; left:25%; width:50%; height:10%; font-size:2vmin; background-color: orange;  }
+#contactCv  { position:fixed; display:none; top:83%; left:25%; width:50%; height:10%; font-size:2vmin; background-color: red;  }
